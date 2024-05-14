@@ -31,13 +31,14 @@ header .logo {
 header .shop-cart-button {
   float: right;
   cursor: pointer;
+  color: #222;
   transition: color, transform 500ms ease;
 }
 
 header .shop-cart-button:hover,
 header .shop-cart-button.active {
   transform: scale(1.5);
-  color: #d401c2;
+  color: #222;
 }
 
 header .shop-cart {
@@ -83,6 +84,28 @@ header .shop-cart .item h2 {
 header .shop-cart .item b {
   color: #797979;
   font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+  color: #b8072b;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  transform: scale(1.5);
+  color: #dd1e44;
+}
+
+header .shop-cart .summa {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 header ul.nav {
